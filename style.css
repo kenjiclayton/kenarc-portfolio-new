@@ -198,3 +198,36 @@ footer{
         margin: 10px;
     }
 }*/
+
+/*Cursor Design*/
+
+html, body{
+    cursor: none;
+}
+.custom-cursor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.site-wide{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black; 
+}
+.site-wide .pointer{
+    width: 35px;
+    height: 30px;
+    background-image: url(images/Cursor/Meat\ Cursor-0001.png);
+    background-repeat: no-repeat;
+    transition: width o.1s ease-in-out, height 0.1s ease-in-out;
+}
+.site-wide.active .pointer{
+    width: 35px;
+    height: 30px;
+    background-image: url(images/Cursor/Meat\ Cursor-0002.png);
+    background-repeat: no-repeat;
+}
