@@ -8,12 +8,21 @@
 
 /*Background*/
 
+html{
+    height: 100%;
+}
+
 body{
     background-image: url(images/samples/ken.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column; 
 }
 
 /*Header Design*/
@@ -120,12 +129,8 @@ main .aboutme{
     background-size: cover;
 }
 
-/*Footer Design*/
+/*footer connect*/
 
-footer{
-    margin: 0 50px 0;
-    background-color: #111;
-}
 .footerContainer{
     width: 100%;
     padding: 50px 30px 20px;
@@ -173,8 +178,26 @@ footer{
 .footerNav ul li a:hover{
     opacity: 1;
 }
+
+/*@media (max-width: 700px){
+    .footerNav ul li{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}*/
+
+/*Footer Design*/
+
+footer{
+    margin: 0 50px;
+    background-color: #111;
+    margin-top: auto;
+}
 .footerBottom{
-    background-color: #000;
     padding: 20px;
     text-align: center;
 }
@@ -188,16 +211,6 @@ footer{
     font-weight: 400;
     margin: 0px 5px;
 }
-/*@media (max-width: 700px){
-    .footerNav ul li{
-        flex-direction: column;
-    }
-    .footerNav ul li{
-        width: 100%;
-        text-align: center;
-        margin: 10px;
-    }
-}*/
 
 /*Cursor Design*/
 
